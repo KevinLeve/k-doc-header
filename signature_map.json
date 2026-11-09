@@ -1,0 +1,47 @@
+{
+  "Chap #": {
+    "font": "Univers LT Std 47 Cn Lt",
+    "size_pt": 24.0,
+    "bold": true
+  },
+  "Chap Title": {
+    "font": "Univers LT Std 47 Cn Lt",
+    "size_pt": 36.0,
+    "bold": true
+  },
+  "Heading 1": {
+    "font": "IScriptSTD Regular",
+    "size_pt": 24.0,
+    "bold": null
+  },
+  "Heading 2": {
+    "font": "IScriptSTD Regular",
+    "size_pt": 20.0,
+    "bold": null
+  },
+  "Heading 3": {
+    "font": "IScriptSTD Regular",
+    "size_pt": null,
+    "bold": null
+  },
+  "TB Head": {
+    "font": "Univers LT Std 47 Cn Lt",
+    "size_pt": null,
+    "bold": true
+  },
+  "SB Head": {
+    "font": "Univers LT Std 47 Cn Lt",
+    "size_pt": 18.0,
+    "bold": true
+  },
+  "Part #": {
+    "font": "Myriad Pro Bold Condensed",
+    "size_pt": 36.0,
+    "bold": true
+  },
+  "Part Title": {
+    "font": "Myriad Pro Bold Condensed",
+    "size_pt": 48.0,
+    "bold": true
+  }
+}
