@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-Doc Header — fix Word heading styles automatically</title>
+<meta name="description" content="K-Doc Header detects manually-formatted headings in Word documents and reapplies proper heading styles, so Navigation Pane and auto-TOC work.">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="#top"><img src="assets/logo.png" alt=""> K-Doc Header</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#download" class="nav-cta">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-badge"><span class="dot"></span> Free &middot; Windows 10/11 &middot; Open source</div>
+    <img class="hero-logo" src="assets/logo.png" alt="K-Doc Header logo">
+    <h1>Stop retyping heading styles by hand.</h1>
+    <p class="lead">K-Doc Header finds headings formatted manually in a Word document and reapplies the correct named heading style — so Navigation Pane, auto-TOC, and document outlines just work.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://github.com/KevinLeve/k-doc-header/releases/latest/download/KDocHeader-Setup-1.1.0.exe">
+        ⬇ Download for Windows
+        <small>Installer &middot; v1.1.0</small>
+      </a>
+      <a class="btn btn-secondary" href="https://github.com/KevinLeve/k-doc-header">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why it exists</div>
+      <h2>Manuscripts drift from their template</h2>
+      <p>Authors resize and bold text by hand instead of using Word's Heading styles. The document looks right — until Navigation Pane, TOC generation, or an export pipeline needs the real structure.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Automatic detection</h3>
+        <p>Matches each paragraph's font, size, and weight against a learned signature map — no manual tagging, no regex rules to write.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Drift-tolerant</h3>
+        <p>Handles imprecise hand-formatting (±1.5pt size drift, missing bold) without misclassifying heading levels.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Non-destructive</h3>
+        <p>Your original file is never modified — output is saved as a new <code>_styled.docx</code> alongside it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:var(--card); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps, no configuration</h2>
+    </div>
+    <div class="how-wrap">
+      <ol class="steps">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Drop in a .docx</h4>
+            <p>Drag a manuscript onto the app window, or choose files from the file picker.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>It detects heading formatting</h4>
+            <p>Each paragraph's font, size, and boldness are compared against the learned style signatures.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Get a properly-styled copy</h4>
+            <p>Headings are retagged with real Word styles — Navigation Pane and auto-TOC work immediately.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <svg viewBox="0 0 420 300" width="100%" role="img" aria-label="Before and after heading styling">
+          <rect x="0" y="0" width="420" height="300" rx="10" fill="#F4F6FA"/>
+          <text x="20" y="26" font-family="Segoe UI, sans-serif" font-size="12" fill="#5B6472" font-weight="600">BEFORE</text>
+          <rect x="20" y="36" width="180" height="10" rx="2" fill="#C7D1DF"/>
+          <rect x="20" y="54" width="150" height="7" rx="2" fill="#DCE2EA"/>
+          <rect x="20" y="66" width="160" height="7" rx="2" fill="#DCE2EA"/>
+          <rect x="20" y="86" width="140" height="8" rx="2" fill="#C7D1DF"/>
+          <rect x="20" y="102" width="150" height="7" rx="2" fill="#DCE2EA"/>
+
+          <text x="220" y="26" font-family="Segoe UI, sans-serif" font-size="12" fill="#2F7FE0" font-weight="700">AFTER</text>
+          <rect x="220" y="36" width="90" height="16" rx="4" fill="#0B1E3C"/>
+          <text x="229" y="47" font-family="Segoe UI, sans-serif" font-size="9" fill="#fff" font-weight="700">Heading 1</text>
+          <rect x="220" y="60" width="150" height="7" rx="2" fill="#DCE2EA"/>
+          <rect x="220" y="72" width="160" height="7" rx="2" fill="#DCE2EA"/>
+          <rect x="220" y="92" width="80" height="14" rx="4" fill="#2F7FE0"/>
+          <text x="229" y="102" font-family="Segoe UI, sans-serif" font-size="9" fill="#fff" font-weight="700">Heading 2</text>
+          <rect x="220" y="114" width="150" height="7" rx="2" fill="#DCE2EA"/>
+
+          <path d="M205 150 L212 145 L212 155 Z" fill="#2F7FE0"/>
+          <line x1="192" y1="150" x2="212" y2="150" stroke="#2F7FE0" stroke-width="2"/>
+
+          <rect x="20" y="150" width="380" height="1" fill="#E1E6ED"/>
+          <text x="20" y="175" font-family="Segoe UI, sans-serif" font-size="11" fill="#5B6472">Navigation Pane</text>
+          <rect x="20" y="185" width="110" height="18" rx="4" fill="#0B1E3C"/>
+          <text x="28" y="197" font-family="Segoe UI, sans-serif" font-size="9" fill="#fff">Evaluating Relationships</text>
+          <rect x="36" y="210" width="100" height="14" rx="3" fill="#EAF2FD"/>
+          <text x="42" y="220" font-family="Segoe UI, sans-serif" font-size="8" fill="#2F7FE0">Using economic theory</text>
+          <rect x="36" y="228" width="90" height="14" rx="3" fill="#EAF2FD"/>
+          <text x="42" y="238" font-family="Segoe UI, sans-serif" font-size="8" fill="#2F7FE0">Relying on assumptions</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="download-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Get started</div>
+      <h2>Download K-Doc Header</h2>
+      <p>Free and open source under the MIT license.</p>
+    </div>
+    <div class="download-cards">
+      <div class="dl-card">
+        <h3>Installer (recommended)</h3>
+        <p>Adds a Start Menu shortcut and a clean uninstaller. No admin rights required.</p>
+        <a class="btn btn-primary" href="https://github.com/KevinLeve/k-doc-header/releases/latest/download/KDocHeader-Setup-1.1.0.exe">⬇ KDocHeader-Setup-1.1.0.exe</a>
+      </div>
+      <div class="dl-card">
+        <h3>Portable</h3>
+        <p>A single .exe — no installation, nothing left behind. Just run it.</p>
+        <a class="btn btn-primary" href="https://github.com/KevinLeve/k-doc-header/releases/latest/download/K-Doc-Header-Portable-1.1.0.exe">⬇ K-Doc-Header-Portable-1.1.0.exe</a>
+      </div>
+    </div>
+    <p class="requirements">Windows 10/11, 64-bit &middot; <a href="https://github.com/KevinLeve/k-doc-header/releases" style="color:#AFC4E4;">all releases</a> &middot; <a href="https://github.com/KevinLeve/k-doc-header" style="color:#AFC4E4;">source on GitHub</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 Kevin Bastin &middot; MIT License</div>
+    <div><a href="https://github.com/KevinLeve/k-doc-header">github.com/KevinLeve/k-doc-header</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
