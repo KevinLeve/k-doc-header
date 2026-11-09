@@ -8,6 +8,7 @@ ROOT = os.path.abspath(os.path.join(SPECPATH, ".."))
 datas = [
     (os.path.join(ROOT, "signature_map.json"), "."),
     (os.path.join(ROOT, "assets", "kdoc_header.ico"), "assets"),
+    (os.path.join(ROOT, "assets", "kdoc_header_header.png"), "assets"),
 ]
 
 a = Analysis(

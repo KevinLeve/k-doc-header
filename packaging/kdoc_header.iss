@@ -6,7 +6,7 @@
 ;   & "$env:LOCALAPPDATA\Programs\Inno Setup 6\ISCC.exe" packaging\kdoc_header.iss
 
 #define MyAppName "K-Doc Header"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "Kevin Bastin"
 #define MyAppExeName "K-Doc Header.exe"
 #define SourceDir "..\dist-final"
